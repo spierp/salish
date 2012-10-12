@@ -1,6 +1,6 @@
 body {
   padding-top: 80px;
-	font-family:"helv-neue-lt";
+font-family:'HelveticaNeueW01-45Ligh';
 }
 
 @import "bootstrap";
@@ -41,16 +41,8 @@ textarea {
 
 /* typography */
 
-
-@font-face {  
- 	font-family: "helv-neue-lt";
-	src: url('Helvetica-neue-lt.ttf'); /* IE */  
- 	src: local("helv-neue-lt"), url('Helvetica-neue-lt.ttf'); /* non-IE */
-}
-
-
 body {
-	font-family:"helv-neue-lt";
+font-family:'HelveticaNeueW01-45Ligh';
 }
 
 .hero-unit {
