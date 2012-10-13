@@ -1,6 +1,10 @@
+<% if signed_in? %>
+1234
+<% else %>  
 <div class ="center hero-unit">
-<h1>Welcome to Sali.sh</h1>
-<p>Small community. Natural sharing.</p>
+<h1>Less is More.</h1>
+<p>Welcome to Salish.</p>
 
 <%= link_to "sign up now", signup_path, class: "btn btn-large btn-primary"%>
 </div>
+<% end %>

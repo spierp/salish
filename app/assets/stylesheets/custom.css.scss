@@ -70,7 +70,7 @@ h1 {
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 1;
   letter-spacing: 1px;
   color: inherit;
@@ -89,7 +89,6 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
 
 /* footer */
 
@@ -157,17 +156,23 @@ aside {
   margin-right: 10px;
 }
 
-//* forms */
+/* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
+  font-size: 1.5em !important;
+	border: 1px solid #bbb;
+  width: 285px;
   padding: 30px, 10px,30px,10px;
-  height: auto !important;
+  height: 40px !important;
   margin-bottom: 15px;
+	text-align:left;
   @include box_sizing;
 }
 
+label {
+font-size: 16px;
+font-style: bold;
+}
 
 #error_explanation {
 	color: #f00;
@@ -194,4 +199,10 @@ input, textarea, select, .uneditable-input {
 			border-bottom: 1px solid $grayLighter;
 		}
 	}
+}
+
+.formcenter {
+	display: block;
+	margin: 0 auto;
+	width: 285px;
 }
