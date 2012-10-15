@@ -1,10 +1,17 @@
 <% if signed_in? %>
-1234
+	<div class ="row-fluid">
+		<div class="span4">
+			<%= render 'shared/user_info' %>
+		</div>
+		<div class="span8">		
+			<%= render 'shared/post_form' %>
+		</div>
+	</div>
 <% else %>  
-<div class ="center hero-unit">
-<h1>Less is More.</h1>
-<p>Welcome to Salish.</p>
+	<div class ="center hero-unit">
+		<h1>Less is More.</h1>
+		<p>Welcome to Salish.</p>
 
-<%= link_to "sign up now", signup_path, class: "btn btn-large btn-primary"%>
-</div>
+		<%= link_to "sign up now", signup_path, class: "btn btn-large btn-primary"%>
+	</div>
 <% end %>

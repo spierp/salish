@@ -158,7 +158,7 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input, select, .uneditable-input {
   font-size: 1.5em !important;
   width: 285px;
   padding: 30px, 10px,30px,10px;
@@ -204,4 +204,33 @@ font-style: bold;
 	display: block;
 	margin: 0 auto;
 	width: 285px;
+}
+
+/* posts */
+
+.timestamp{
+	color: $grayLight;
+}
+
+.posts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+
+.compose{
+	font-size: 16px;
+	height: 65px;
+	width: 100%;
+	margin-top: 10px;
+	@include box_sizing;
+}
+
+.input{
+	font-size: 16px;
+	width: auto;
 }

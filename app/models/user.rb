@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   
   attr_accessible :name, :email, :password, :password_confirmation, :image
   has_secure_password
+  has_many :posts, dependent: :destroy
   
   mount_uploader :image, ImageUploader
   
