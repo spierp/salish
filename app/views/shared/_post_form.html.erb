@@ -1,7 +1,9 @@
 <%= form_for(@post) do |f| %>
 	<%= render 'shared/error_messages', object: @post %>
-	<div class="field">
-		<%= f.text_area :content, placeholder: "Compose new post...", class: "compose" %>
+	<div class="field" style="border-top: 1px solid #EAEAEA; padding:10px">
+		<%= f.label :image %>
+		<%= f.file_field :image %>
+		<%= f.text_area :content, placeholder: "Text...", class: "compose" %>
 	</div>
 	<%= f.submit "Post", class: "btn btn-large btn-primary"%>	
 <% end %>	

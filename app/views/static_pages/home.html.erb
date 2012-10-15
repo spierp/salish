@@ -1,7 +1,9 @@
 <% if signed_in? %>
 	<div class ="row-fluid">
 		<div class="span4">
+			<section style="margin-bottom: 15px">
 			<%= render 'shared/user_info' %>
+			</section>
 		</div>
 		<div class="span8">		
 			<%= render 'shared/post_form' %>
