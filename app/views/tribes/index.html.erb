@@ -6,10 +6,14 @@
   </tr>
   <% for tribe in @tribes %>
     <tr>
-      <td><%=h tribe.name %></td>
-      <td><%#= link_to "Show", group %></td>
-      <td><%#= link_to "Edit", edit_group_path(group) %></td>
-      <td><%#= link_to "Destroy", group, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to tribe.name, tribe %></td>
+	
+	<% if current_user.admin? && !current_user?(tribe) %>
+	
+
+      <td><%= link_to "Edit", edit_tribe_path(tribe) %></td>
+	<td><%= link_to "delete", tribe, method: :delete, confirm: "You sure?" %></td>
+	<% end %>
     </tr>
   <% end %>
 </table>
