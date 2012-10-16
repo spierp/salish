@@ -12,10 +12,10 @@ class TribesController < ApplicationController
   end
   
   def create
-    @tribe = tribe.new(params[:tribe])
+    @tribe = Tribe.new(params[:tribe])
     if @tribe.save
-      flash[:notice] = "Successfully created tribe."
-      redirect_to @tribe
+      flash[:success] = "Successfully created tribe."
+      redirect_to root_path
     else
       render :action => 'new'
     end
