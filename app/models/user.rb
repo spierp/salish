@@ -4,6 +4,9 @@ class User < ActiveRecord::Base
   has_secure_password
   has_many :posts, dependent: :destroy
   
+  has_many :memberships
+  has_one :tribe, :through => :memberships
+  
   mount_uploader :image, ImageUploader
   
   before_save { |user| user.email = user.email.downcase }

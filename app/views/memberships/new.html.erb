@@ -1,0 +1,17 @@
+<% provide(:title, "Join Tribe")%>
+
+
+<div class="formcenter">
+			<%= form_for(@membership) do |f| %>
+				<%#= render 'shared/error_messages', object: @user %>	
+				<%#= f.collection_select ("post", "category", Post::CATEGORIES, {:include_blank => true}) %>
+				<%= f.label :tribe_id %>
+				<%= f.text_field :tribe_id %>
+				
+				<%= f.submit "Join Tribe", class: "btn btn-large btn-primary"%>
+	
+			<% end %>
+			
+			<p>Already a member? <%= link_to "Sign in", signin_path %></p>
+
+</div>

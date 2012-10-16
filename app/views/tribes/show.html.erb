@@ -1,0 +1,9 @@
+<% provide(:title, @tribe.name) %>
+<ul>
+<% for user in @tribe.users %>
+<li><%=h user.name %></li>
+
+</ul>
+
+<%= render @tribe.feed  %>
+<% end %>

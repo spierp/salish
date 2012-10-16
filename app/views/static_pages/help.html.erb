@@ -1,5 +1,9 @@
 <% provide(:title, 'Help')%>
-<h1>Help</h1>
-	<p>
-	Help
-	</p>bund
+<h1>Feed</h1>
+<div class="row-fluid">
+<div class="span8">
+		<ol class="posts">
+			<%= render partial: 'shared/feed_item', collection: @feed_items %>
+		</ol>
+</div>
+</div>
